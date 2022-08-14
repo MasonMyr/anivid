@@ -1,0 +1,1805 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth; 
+}
+
+body {
+  background-color: #6705e7;
+}
+
+header {
+  box-shadow: 0px 4px 10px 15px rgba(0, 0, 0, 0.25);
+  height: 80px;
+}
+
+footer {
+  position: relative;
+  z-index: 11;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* -------------Стили меню------------- */
+.navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(78, 0, 180, 0.85) 0%,
+    rgba(36, 0, 83, 0.85) 100%
+  );
+}
+
+.navbar .navbar-brand {
+  margin-left: 90px;
+  color: white;
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: 0.075em;
+  -webkit-text-stroke-width: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbarItem {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.navbarItem:hover {
+  text-shadow: 0px 0px 10px #ffffff;
+  color: white;
+}
+
+.navbarItem:focus {
+  color: white;
+}
+
+.navbarItem:active {
+  color: white;
+}
+
+/* -------------Поиск------------- */
+/* Стили вкладки аниме */
+#menuAnime {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#menuAnime a {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+/* -------------Стили вкладки жанры------------- */
+#menuGenre {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+#menuGenre a {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+#genreList {
+  list-style-type: none;
+  margin-left: -10px;
+}
+
+.cod4 {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+}
+
+/* -------------Стили слайдера------------- */
+
+#carouselAnime {
+  position: relative;
+  top: -78px;
+  z-index: 9;
+}
+
+.carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 90px;
+  margin-bottom: 12%;
+}
+
+.carousel-indicators li {
+  width: 22px;
+  height: 4px;
+  margin-right: 4px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px #ffffff;
+  border-radius: 60px;
+}
+
+.carousel-indicators li:hover {
+  color: #0fa;
+  opacity: 1;
+  background: #00ffaa;
+  box-shadow: 0px 0px 4px #00ffaa;
+}
+
+.carousel-caption {
+  left: 0%;
+  width: 100%;
+}
+
+.gradient {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  cursor: default;
+}
+
+.gradient::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-image: linear-gradient(
+      360deg,
+      #4e00b4 14.54%,
+      rgba(78, 0, 180, 0) 27.64%
+    ),
+    linear-gradient(35deg, #4e00b4 10.78%, rgba(78, 0, 180, 0) 30.29%);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 5;
+  display: none;
+}
+
+.carouselAnimeCaption {
+  margin-bottom: 12%;
+}
+
+.carouselAnimeCaption h5 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: left;
+  width: 33%;
+  margin-left: 90px !important;
+  margin-bottom: 1.5%;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+  z-index: 1;
+}
+
+.carouselAnimeCaption p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: left;
+  margin-left: 90px !important;
+  z-index: 2;
+  margin-bottom: 1.5%;
+}
+
+.carouselAnimeCaption a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 35px;
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left !important;
+  margin-right: 79.4%;
+  transition: all 0.6s ease;
+}
+
+.carouselAnimeCaption a:hover {
+  background: #00ffaa;
+  box-shadow: 0px 0px 10px #00ffaa;
+}
+
+/* -------------Стили карточек------------- */
+.card {
+  background: transparent;
+  border: none;
+  width: 247px !important;
+  max-height: 434px;
+}
+
+.allGenres .card {
+  max-height: 131px;
+}
+
+.card-img-top {
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  max-width: 235px;
+  max-height: 332px;
+}
+
+.inTrendCarousel,
+.narutoWorldCarousel,
+.popularCarousel,
+.recentlyaddedCarousel,
+.alldubbedCarousel,
+.allsubbedCarousel,
+.allAnimeCarousel,
+.deadInsideCarousel,
+.fateCollectionCarousel,
+.mostTopAnimeCarousel {
+  max-width: 1729px !important;
+  min-width: 0;
+}
+
+.carouselBtnMobile {
+  width: 57px;
+  height: 30px;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 37px;
+  text-align: center;
+  margin-right: 10px;
+  display: none;
+}
+
+.slick-disabled {
+  visibility: hidden;
+}
+
+.slick-slide {
+  width: 247px !important;
+}
+
+.slick-slide img {
+  height: 349px;
+}
+
+.slick-list {
+  max-height: 430px;
+}
+
+.nextBtn,
+.popular_nextBtn,
+.recentlyadded_nextBtn,
+.alldubbed_nextBtn,
+.allsubbed_nextBtn,
+.allAnime_nextBtn,
+.narutoWorld_nextBtn,
+.carouselBtn {
+  transition: all 0.1s linear;
+}
+
+.nextBtn img,
+.popular_nextBtn img,
+.recentlyadded_nextBtn img,
+.alldubbed_nextBtn img,
+.allsubbed_nextBtn img,
+.allAnime_nextBtn img,
+.narutoWorld_nextBtn img,
+.carouselBtn img {
+  padding-top: 180px;
+  padding-right: 20px;
+  transition: all 0.1s linear;
+}
+
+.nextBtn:hover img,
+.popular_nextBtn:hover img,
+.recentlyadded_nextBtn:hover img,
+.alldubbed_nextBtn:hover img,
+.allsubbed_nextBtn:hover img,
+.allAnime_nextBtn:hover img,
+.narutoWorld_nextBtn:hover img,
+.carouselBtn:hover img {
+  transform: scale(0.9);
+  padding-top: 189px;
+}
+
+.prevBtn,
+.popular_prevBtn,
+.recentlyadded_prevBtn,
+.alldubbed_prevBtn,
+.allsubbed_prevBtn,
+.allAnime_prevBtn,
+.narutoWorld_prevBtn {
+  transition: all 0.1s linear;
+}
+
+.prevBtn img,
+.popular_prevBtn img,
+.recentlyadded_prevBtn img,
+.alldubbed_prevBtn img,
+.allsubbed_prevBtn img,
+.allAnime_prevBtn img,
+.narutoWorld_prevBtn img {
+  padding-top: 180px;
+  padding-left: 20px;
+  transition: all 0.1s linear;
+}
+
+.prevBtn:hover img,
+.popular_prevBtn:hover img,
+.recentlyadded_prevBtn:hover img,
+.alldubbed_prevBtn:hover img,
+.allsubbed_prevBtn:hover img,
+.allAnime_prevBtn:hover img,
+.narutoWorld_prevBtn:hover img {
+  transform: scale(0.9);
+  padding-top: 189px;
+}
+
+.animeCardTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-left: 90px;
+  margin-top: 29px;
+  margin-bottom: 25px;
+}
+
+/* .narutoWorld .card,
+.deadInside .card,
+.mostTopAnime .card,
+.fateCollection .card {
+  width: 270px !important;
+  height: auto;
+}
+
+.narutoWorld .card img,
+.deadInside .card img,
+.mostTopAnime .card img,
+.fateCollection .card img {
+  max-width: 262px !important;
+  height: 394px;
+} */
+
+.card-body {
+  max-height: 145px !important;
+  margin-top: 7px;
+  transition: all 0.4s ease;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.typeTrans {
+  margin-left: -10px;
+  margin-top: -10px;  
+}
+
+.subbed,
+.dubbed {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  background: #2c0065;
+  border: 1px solid #2c0065;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 61px;
+  padding: 2px 5px;
+}
+
+.deadInside .subbed,
+.deadInside .dubbed,
+.fateCollection .subbed,
+.fateCollection .dubbed,
+.mostTopAnime .subbed,
+.mostTopAnime .dubbed,
+.narutoWorld .subbed,
+.narutoWorld .dubbed {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid white;
+}
+
+.startWatchingBtn {
+  position: absolute;
+  z-index: 30;
+  top: 450px;
+  opacity: 0;
+  background: transparent;
+  left: 7px;
+  transition: all 0.4s ease;
+}
+
+.inTrend .d-flex,
+.popular .d-flex,
+.recentlyadded .d-flex,
+.deadInside .d-flex,
+.narutoWorld .d-flex {
+  overflow: hidden;
+  gap: 10px;
+  max-height: 430px;
+}
+
+.card:hover {
+  overflow: visible;
+  height: 434px;
+}
+
+.card:hover .subbed,
+.card:hover .dubbed {
+  background-color: white;
+  border: none;
+  color: black;
+  box-shadow: none;
+}
+
+.card:hover .startWatchingBtn {
+  opacity: 10;
+  transform: translateY(-100px);
+}
+
+.card:hover .card-body {
+  position: absolute;
+  z-index: 28;
+  transform: translateY(-70px);
+  background-color: white;
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  overflow: visible;
+  bottom: 0;
+}
+
+.card:hover .card-img-top {
+  margin: 0 auto!important;
+}
+
+.allGenres .card:hover .card-body {
+  z-index: 28;
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  overflow: visible;
+  transform: translateY(0px);
+  bottom: unset;
+}
+
+.allGenres .card:hover .card-body .card-title {
+  color: rgb(255, 255, 255);
+}
+
+.allGenres .card-body {
+  max-height: 145px !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .card-body .card-title,
+.card:hover .card-body .card-text {
+  color: black;
+}
+
+.startWatchingBtn a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  left: 10px;
+  line-height: 24px;
+  padding: 8px 16.5px 8px 18px;
+  border-radius: 53px;
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.startWatchingBtn a:hover {
+  background: #00ffaa;
+  box-shadow: 0px 0px 10px 2px #00ffaa;
+}
+
+.additionalInfo {
+  font-weight: 600;
+  z-index: 27;
+  left: 6px;
+  top: -1px;
+  font-size: 15px;
+  line-height: 20px;
+  width: 235px;
+  height: 353px;
+  color: #ffffff;
+  position: absolute;
+  transition: all 0.4s ease;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(63, 2, 141, 0.76),
+    rgba(63, 2, 141, 0.76)
+  );
+}
+
+.additionalInfo p {
+  margin-left: 5px;
+  position: absolute;
+  top: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+  height: 200px;
+}
+
+.card:hover .additionalInfo {
+  opacity: 10;
+  z-index: 27;
+}
+
+.allBtn {
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 37px;
+  transition: all 0.6s ease;
+}
+
+.allBtn:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+/* -------------Стили "В тренде"------------- */
+.inTrend {
+  height: 557px;
+  position: relative;
+  z-index: 10;
+  margin-top: -18rem !important;
+  background: linear-gradient(180deg, rgba(78, 0, 180, 0) 0%, #4e00b4 30.52%);
+}
+
+.inTrendTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-left: 90px;
+}
+
+/* -------------Стили "Мир Наруто"------------- */
+.narutoWorld {
+  margin-top: 32px;
+  height: 609px;
+  background: linear-gradient(
+      360deg,
+      #6705e7 -6.98%,
+      rgba(103, 5, 231, 0) 20.94%
+    ),
+    url(../img/Naruto-World-Bg.png);
+}
+
+.narutoWorld .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Популярно"------------- */
+.popular {
+  background: #4e00b4;
+  margin-top: 32px;
+  height: 586px;
+}
+
+.popular .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Коллекция Dead Inside'а"------------- */
+.deadInside {
+  margin-top: 32px;
+  background: url(../img/Dead-Inside-Bg.png);
+}
+
+.deadInside .slick-list {
+  margin-left: 90px;
+}
+
+.deadInside .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Недавние"------------- */
+.recentlyadded {
+  background: #4e00b4;
+  margin-top: 32px;
+  height: 586px;
+}
+
+.recentlyadded .d-flex {
+  gap: 10px;
+}
+
+/* Стили "Самые топовые аниме" */
+.mostTopAnime {
+  margin-top: 32px;
+  height: 609px;
+  color: black !important;
+  background: url(../img/Top-Anime-Bg.png);
+}
+
+.mostTopAnime .dubbed,
+.mostTopAnime .subbed {
+  border: 1px solid black;
+}
+
+.mostTopAnime .animeCardTitle,
+.mostTopAnime .card-title,
+.mostTopAnime .card-text,
+.mostTopAnime .dubbed,
+.mostTopAnime .subbed {
+  color: black !important;
+}
+
+.mostTopAnime .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Озвученные"------------- */
+.alldubbed {
+  background: #4e00b4;
+  margin-top: 32px;
+  height: 586px;
+}
+
+.alldubbed .d-flex {
+  gap: 10px;
+}
+
+/* Стили "Судьба Коллекция" */
+.fateCollection {
+  background: url(../img/Fate-Collection-Bg.png);
+  margin-top: 32px;
+  height: 609px;
+}
+
+.fateCollection .subbed,
+.fateCollection .dubbed {
+  border: 1px solid white;
+}
+
+.fateCollection .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Все с субтитрами"------------- */
+.allsubbed {
+  background: #4e00b4;
+  margin-top: 32px;
+  height: 586px;
+}
+
+.allsubbed .d-flex {
+  gap: 10px;
+}
+
+/* Стили "Жанры" */
+.allGenres {
+  margin-top: 32px;
+  margin-bottom: 82px;
+}
+
+.genreTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.genreTitle:hover {
+  text-decoration: none;
+}
+
+.allGenres .d-flex {
+  gap: 10px;
+}
+
+/* -------------Стили "Все аниме"------------- */
+.allAnime {
+  background: #4e00b4;
+  height: 586px;
+}
+
+.allAnime .d-flex {
+  gap: 10px;
+}
+
+/* -------------------Футер------------- */
+footer {
+  font-size: 24px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.footertext {
+  text-decoration: none;
+
+  color: black;
+}
+
+.footertext:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.footergrid {
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: auto;
+}
+
+/* ---------------- Страница terms.html -----------------*/
+
+/* --------------------------Текст-----------------------*/
+.termsh {
+  margin: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 85px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.terms {
+  width: auto;
+  margin-left: 90px;
+  margin-right: 90px;
+  color: #fff;
+}
+
+.termshtext {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: left;
+  width: auto;
+}
+
+/* ---------------- Страница terms.html конец-----------------*/
+
+/* ----------------Страница registration.html --------------- */
+.tab {
+  width: 470px;
+  height: auto;
+  background: #43019a;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.nav-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  background-color: #43019a;
+}
+
+.nav-itemreg {
+  display: grid;
+  background-color: white;
+  height: 60px;
+}
+
+.nav-linkreg {
+  background-color: white;
+  text-align: center;
+  color: #43019a;
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.nav-linkreg.active {
+  background-color: #420198;
+  color: white;
+}
+
+.nav-linkreg:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #43019a;
+  color: #43019a;
+  transition: 0.5s;
+}
+
+.nav-linkreg.active:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px white;
+  color: white;
+  transition: 0.5s;
+}
+
+.anivtab {
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+  -webkit-text-stroke-width: 2px;
+}
+
+.logoreg {
+  text-align: center;
+  font-family: "Abel", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: 0.075em;
+  -webkit-text-stroke-width: 2px;
+}
+
+.formrega {
+  border: none;
+  border-radius: 0px;
+  width: 400px;
+  height: 50px;
+  margin-top: 16px;
+}
+
+.btn-primary {
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  width: 220px;
+  height: 50px;
+}
+
+.btn-primary:hover {
+  color: black;
+  background-color: white;
+}
+
+.lica {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  color: white;
+  margin-top: 16px;
+}
+
+.usloviya a,
+.estlink a,
+.lica a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.est {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.estlink {
+  color: white;
+  margin-top: -20px;
+}
+
+.usloviya a,
+.estlink a,
+.lica a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.passreset a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+#formrega::placeholder {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.075em;
+  color: #000000;
+}
+
+.form-check {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  width: 400px;
+}
+/* Страница animelsit.php нчаало */
+.tab #mytabs{
+  display: grid;
+  grid-template-columns : repeat(2, 1fr);
+}
+
+#mytabs{
+  display: grid;
+  grid-template-columns : repeat(4, 1fr);
+}
+
+
+/* ----------------Страница registration.html Конец --------------- */
+/* ------------------Страница resetpassword.html................... */
+.resetpassform {
+  width: 470px;
+  height: 450px;
+  background: #43019a;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#formpassreset{
+  width: 500px;
+  height: 40px;
+}
+
+.alertpassreset {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  max-width: 400px;
+  margin-bottom: 24px;
+  margin-top: 7px;
+}
+/* Страница animepage.html */
+.animePageBG {
+  background: linear-gradient(180deg, rgba(103, 5, 231, 0) 34.41%, #6705E7 100%), linear-gradient(90deg, #6705E7 -10.05%, rgba(103, 5, 231, 0) 67.34%), url(../img/bg/anime_page_bg.jpg);
+}
+.animePageBG .animePageInf {
+  gap: 46px;
+}
+
+.animePageInf {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.AnimePageTitle {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+
+.AnimePageCard{
+  margin-top: 77px;
+}
+
+.animePageDescription {
+  margin-top: 90px;
+}
+
+.animePageDescription p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.genresList span{
+  border: 1px solid #FFFFFF;
+  border-radius: 61px;
+  padding: 1px 9px 3px 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: default;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.addToList {
+  margin-bottom: 17px;
+}
+
+.addToListBtn {
+  text-decoration: none;
+  padding: 6px 13px;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: transparent;
+  transition: all 0.6s ease;
+}
+
+.addToListBtn:hover {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00ffaa;
+  background: #00ffaa;
+  box-shadow: 0px 0px 10px 2px #00ffaa;
+}
+
+.addToListBtn:active {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #00ffaa;
+  background: #00ffaa;
+  box-shadow: 0px 0px 10px 2px #00ffaa;
+}
+
+.addedToList {
+  text-decoration: none!important;
+  color: #000000;
+  background: #00ffaa;
+  font-style: normal;
+  font-weight: 600;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #00ffaa;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 6px 13px;
+  transition: all 0.6s ease;
+}
+
+.addedToList:hover {
+  color: black;
+  box-shadow: 0px 0px 10px 2px #00ffaa;
+}
+
+.none {
+  display: none; 
+}
+
+.list-group {
+  border-radius: 0px;
+}
+
+.list-group-item {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.animeFrames .d-flex {
+  margin-top: -10px;
+}
+
+.animeFrames p {
+  margin-left: 100px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-top: 23px;
+}
+
+.animePagePlayer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.animeSeriesList {
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.seriaChoose {
+  width: 373px;
+  height: 376px;
+  background: #4E00B4;
+  border-radius: 6px;
+  margin-bottom: 32px;
+}
+
+.seriaChoose .seriaDesc h5{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+}
+.seriaChoose .seriaDesc p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  width: 341px;
+  height: 120px;
+}
+
+.seriaChoose .seriaImg img{ 
+  border-radius: 6px;
+  margin-left: 16px;
+  margin-top: 16px;
+  width: 341px;
+  height: 190px;
+}
+
+.seriaDesc {
+  margin-left: 16px;
+}
+/* --------------------Страница Profile.html--------------- */
+.tabprofile {
+  width: 1188px;
+  height: 682px;
+  background: #43019a;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.nav-linkprofile {
+  color: #43019a;
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: bold;
+  transition: all 0s!important
+}
+
+.nav-linkprofile.active {
+  background-color: #43019a;
+  color: white;
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+#tabsforprofile {
+  width: 618px;
+  height: 60px;
+  display: grid;
+  text-align: center;
+}
+
+.tabforlist{
+  margin-top: 50px;
+  margin-bottom: 150px;
+  min-height: 590px;
+}
+
+.tablist{
+  height: auto;
+  background-color: #43019a;
+}
+
+.backprofile{
+  background-color: #6705e7;
+}
+
+.nav-linkprofile:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #43019a;
+  color: #43019a;
+  transition: 0.5s;
+}
+
+.nav-linkprofile.active:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 1px white;
+  color: white;
+  transition: 0.5s;
+}
+
+.nav-itemprofile {
+  display: grid;
+  background-color: white;
+  align-items: center;
+}
+
+.rounded-circle {
+  width: 100px;
+  border: 2px solid white;
+}
+
+.label input[type="file"] {
+  outline: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.label {
+  cursor: pointer;
+  text-align: center;
+  text-align: center;
+  width: 300px;
+}
+
+.smena {
+  color: white;
+  font-size: 110%;
+}
+
+.labeledit {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.formcontroledit {
+  width: 477px;
+  height: 40px;
+  border-radius: 0px;
+  border: none;
+}
+
+.gridformedit .formedit,
+.formcontroledit {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 130px 3fr;
+}
+.stats {
+  grid-template-columns: 130px 50px;
+  grid-column-gap: 18px;
+  margin-left: -14px;
+  display: grid;
+  color: white;
+}
+
+.h3stat{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.stats p {
+  text-align: end;
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+#smotryu,
+#zaplan,
+#prosmotreno,
+#brosheno {
+  text-align: start;
+}
+
+
+.formedit {
+  text-align: right;
+}
+
+.btnsave {
+  width: 145px;
+  height: 40px;
+  background-color: transparent;
+  color: #00ffaa;
+  border: 1px #00ffaa solid;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-self: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.saveimg {
+  place-self: center;
+}
+
+.errorMsg {
+  color: red;
+  height: 5px;
+}
+
+
+/* Страница in_trend */
+
+@media screen and (max-width: 1730px) {
+
+  .inTrend {
+    margin-top: -17rem !important;
+  }
+
+  .carouselAnimeCaption a {
+    margin-right: 77%;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .deadInside .slick-list {
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .tabprofile {
+    width: auto;
+    height: 742px;
+  }
+  #tabsforprofile {
+    width: auto;
+  }
+
+  .inTrend {
+    margin-top: -16rem!important;
+  }
+
+  .carouselAnimeCaption a {
+    margin-right: 70%;
+  }
+  .carouselAnimeCaption h5 {
+    font-size: 45px;
+    line-height: 49px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-brand {
+    margin-left: 0!important;
+  }
+
+  .mediaLinks {
+    display: none;
+  }
+
+  .inTrend {
+    margin-top: -10rem !important;
+  }
+
+  .inTrendCarousel,
+  .narutoWorldCarousel {
+    margin-left: 1px;
+    max-width: 1200px !important;
+  }
+
+  .popular_prevBtn,
+  .popular_nextBtn,
+  .recentlyadded_prevBtn,
+  .recentlyadded_nextBtn,
+  .alldubbed_prevBtn,
+  .alldubbed_nextBtn,
+  .allsubbed_nextBtn,
+  .allsubbed_prevBtn,
+  .allAnime_nextBtn,
+  .allAnime_prevBtn,
+  .prevBtn,
+  .nextBtn,
+  .narutoWorld_nextBtn,
+  .narutoWorld_prevBtn,
+  .carouselBtn
+   {
+    display: none;
+  }
+
+  .carouselBtnMobile {
+    display: block;
+  }
+
+  .carouselAnimeCaption h5 {
+    font-size: 40px !important;
+    line-height: 45px;
+    margin-bottom: 2%;
+    margin-left: 20px !important;
+  }
+
+  .carouselAnimeCaption p {
+    font-size: 16px;
+    margin-left: 20px !important;
+  }
+
+  .carouselAnimeCaption a {
+    margin-right: 79%;
+  }
+
+  .carousel-indicators {
+    justify-content: center;
+    margin-left: 15%;
+  }
+
+  #carouselAnime {
+    top: 7px;
+  }
+
+  .animeCardTitle {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .allBtn {
+    font-size: 18px;
+    padding-bottom: 1px;
+    margin-right: 20px;
+  }
+
+  .narutoWorld,
+  .popular,
+  .deadInside,
+  .recentlyadded,
+  .mostTopAnime,
+  .alldubbed,
+  .allsubbed,
+  .allGenres,
+  .fateCollection {
+    margin-top: 16px;
+  }
+
+  .allGenres {
+    margin-bottom: 32px;
+  }
+
+  .footergrid {
+    grid-template-columns: auto auto;
+    grid-column-gap: 100px;
+    margin: 0 auto;
+  }
+  #mytabs a{
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .inTrend {
+    margin-top: -7rem !important;
+  }
+
+  .navbar .navbar-brand {
+    margin-left: 0px;
+  }
+
+  .animeCardTitle {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #menuAnime {
+    width: 100%;
+  }
+
+  #menuGenre {
+    width: 100%;
+    height: auto;
+  }
+
+  .carouselAnimeCaption h5 {
+    font-size: 30px !important;
+    line-height: 34px !important;
+    margin-bottom: 1.5%;
+  }
+
+  .carouselAnimeCaption p {
+    font-size: 16px;
+    margin-bottom: 1.5%;
+  }
+
+  .carouselAnimeCaption a {
+    padding: 5px 25px;
+    margin-right: 77%;
+  }
+
+  .carousel-indicators li {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inTrend {
+    margin-top: -5rem !important;
+  }
+
+  .gradient::after {
+    background-image: linear-gradient(
+      360deg,
+      #4e00b4 14.54%,
+      rgba(78, 0, 180, 0) 27.64%
+    );
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .carouselAnimeCaption h5 {
+    font-size: 28px !important;
+    line-height: 30px !important;
+    margin-bottom: 0.5%;
+  }
+
+  .carouselAnimeCaption p {
+    font-size: 16px;
+    margin-bottom: 1%;
+  }
+
+  .carouselAnimeCaption a {
+    display: none;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+  .footertext {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+
+  .animeCardTitle {
+    font-size: 32px;
+  }
+
+  .termsh {
+    line-height: 50px;
+    font-size: 48px;
+    margin: 40px;
+  }
+
+  .terms {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .formcontroledit {
+    width: 400px;
+  }
+  .gridformedit .formedit,
+.formcontroledit {
+  grid-template-columns: none;
+  text-align: center;
+}
+.nav-linkprofile {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.h3stat{
+  text-align: center;
+}
+
+.stats {
+  grid-template-columns: 1fr 1fr;
+  place-self: center;
+}
+#smotryu,
+#zaplan,
+#prosmotreno,
+#brosheno {
+  text-align: center;
+}
+.nav-linkprofile.active {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#mytabs a{
+  font-size: 18px;
+  line-height: 22px;
+}
+.nav-linkreg {
+  padding-top: 13px;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .inTrend {
+    margin-top: -4rem !important;
+  }
+
+  #inTrendList .card {
+    /* width: 50% !important; */
+    margin: auto;
+  }
+
+  .animeCardTitle {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .allBtn {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+
+  .carouselAnimeCaption h5 {
+    font-size: 20px !important;
+    line-height: 106.56%;
+  }
+
+  .carouselAnimeCaption p {
+    font-size: 14px;
+  }
+
+  /* ------------Адаптив формы регистрации------------------ */
+  .form-check {
+    width: 300px;
+  }
+
+  .btnreg {
+    width: 200px;
+    height: 50px;
+  }
+
+  #formrega {
+    width: 350px;
+    height: 50px;
+  }
+
+  .tab {
+    width: auto;
+    height: 750px;
+  }
+
+  
+
+  /* -------------Адаптив формы восстановления-------------- */
+  .resetpassform {
+    text-align: center;
+    width: auto;
+    height: 500px;
+  }
+
+  .termsh {
+    line-height: 34px;
+    margin: 20px;
+    font-size: 32px;
+  }
+
+  .terms {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .nav-linkprofile {
+    font-size: 24px;
+    line-height: 28px;
+
+  }
+  
+  .formcontroledit {
+    width: 350px;
+  }
+  .nav-linkprofile.active {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  #mytabs a{
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .inTrend {
+    margin-top: -2rem !important;
+    background: #4e00b4;
+  }
+
+  .animeCardTitle {
+    font-size: 22px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .allBtn {
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    line-height: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .carouselAnimeCaption h5 {
+    font-size: 20px !important;
+    line-height: 106.56% !important;
+    margin-bottom: 0;
+    margin-left: 10px !important;
+  }
+
+  .carouselAnimeCaption p {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: -20px;
+    margin-left: 10px !important;
+  }
+
+  .pereprava {
+    margin-left: 10px;
+  }
+  #mytabs a{
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
